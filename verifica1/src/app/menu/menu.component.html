@@ -1,0 +1,9 @@
+<button *ngFor="let item of menu" class="btn btn-primary" style="margin: 10px;" (click)="funzioneC(item)">
+    {{ item }}
+  </button>
+  
+  <p>ID passato dal figlio: {{ idDalFiglio }}</p>
+  
+  <piatti [piatti]="selectedItem" (idSelezionato)="onIdSelezionato($event)">
+  </piatti>
+  

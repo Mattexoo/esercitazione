@@ -1,0 +1,12 @@
+<div class="container">
+    <div style="display: flex; flex-wrap: wrap; width: 100%; ">
+        <div class="card" style="width: 18rem; margin: 10px;" *ngFor="let piatto of piatti">
+            <img class="card-img-top" src={{piatto.strMealThumb}} alt="Card image cap">
+            <div class="card-body">
+            <h5 class="card-title">{{piatto.strMeal}}</h5>
+            <p class="card-text">ID: {{piatto.idMeal}}</p>
+            <a href="#" class="btn btn-primary" (click)="selezionaPiatto(piatto.idMeal)">Go somewhere</a>
+            </div>
+        </div>        
+    </div>
+</div>
